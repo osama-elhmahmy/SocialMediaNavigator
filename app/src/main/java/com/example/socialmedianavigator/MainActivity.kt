@@ -23,12 +23,6 @@ class MainActivity : ComponentActivity() {
     private var redditPackageName       = "com.reddit.frontpage"
     private var gmailPackageName        = "com.google.android.gm"
 
-//    var fbbLink         = "fb://facewebmodal/"
-//    var twitterLink     = "https://twitter.com/"
-//    var instagramLink   = "http://instagram.com/"
-//    var redditLink      = "https://www.reddit.com/"
-//    var gmailLink       = "https://gmail.com/"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
@@ -90,31 +84,6 @@ class MainActivity : ComponentActivity() {
             builder.show()
         }
 
-//        try {
-//            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link)).apply {
-//                addCategory(Intent.CATEGORY_BROWSABLE)
-//                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REQUIRE_NON_BROWSER
-//            }
-//            startActivity(intent)
-//        } catch (e: ActivityNotFoundException) {
-//            Toast.makeText(this, "Not installed, You will be directed to play store.", Toast.LENGTH_LONG).show()
-//
-//            Timer().schedule(4000){
-//                installApplication(PackageName)
-//                exitProcess(1)
-//            }
-//        }
-
-//        try{
-//            startActivity(
-//                Intent(
-//                    Intent.ACTION_VIEW,
-//                    Uri.parse(link)
-//                )
-//            )
-//        } catch (e: ActivityNotFoundException) {
-//            installApplication(PackageName)
-//        }
     }
 
     fun installApplication (PackageName : String){
