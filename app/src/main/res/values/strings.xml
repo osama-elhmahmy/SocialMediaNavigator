@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Social Media Applications</string>
+    <string name="name_text">Social Media Applications</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="reddit">Reddit</string>
+    <string name="gmail">Gmail</string>
+</resources>
